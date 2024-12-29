@@ -138,27 +138,27 @@ body {
 
 @media (max-width: 480px) {
   .menu {
-    padding: 8px 3%;
+    padding: 17px 3%;
     justify-content: space-between;
   }
 
   .logo-1 {
-    width: 20%; /* Logo más pequeño */
-    max-width: 80px;
+    width: 30%; /* Logo más pequeño */
+    max-width: 90px;
   }
 
   .navbar {
     flex-wrap: nowrap; /* Mantiene todo en línea */
-    gap: 5px; /* Espaciado ajustado */
+    gap: 8px; /* Espaciado ajustado */
   }
 
   .menu .navbar ul li a {
-    font-size: 11px;
-    padding: 1px;
+    font-size: 12px;
+    padding: 2px;
   }
   .social {
-    height: 30px;
-    width: 30px; /* Iconos más pequeños */
+    height: 35px;
+    width: 35px; /* Iconos más pequeños */
 
   }
 }
@@ -167,8 +167,8 @@ body {
 /* caja de texto de delivery gratis*/
 /* Contenedor del Slider */
 .header-content {
-  margin-top: 70px;
-  padding-bottom: 10px;
+  margin-top: 90px;
+  padding-bottom: 5px;
   margin-bottom: auto;
   display: flex;
   align-items: center; /* Alinea verticalmente */
@@ -177,7 +177,7 @@ body {
 
 /* Imagen del Slider */
 .slider-img {
-  width: 80%;
+  width: 90%;
   margin: 0 auto; /* Centra la imagen */
   text-align: center;
 }
@@ -286,6 +286,7 @@ p {
   color: red;
 }
 /* CAJAS DE PROMOCIONES */
+
 .promotions {
   padding: 20px;
   text-align: center;
@@ -303,7 +304,7 @@ p {
   border: 5px solid #062e0a;
   border-radius: 10px;
   overflow: hidden;
-  width: 330px;
+  width: 300px;
   box-shadow: 0 2px 5px rgba(53, 50, 50, 0.678);
 }
 .promo-card:hover {
@@ -366,7 +367,7 @@ button:hover {
 }
 
 .tabs-container {
-  max-width: 1600px;
+  max-width: 1700px;
   margin: 0 auto;
   text-align: center;
   
@@ -377,14 +378,14 @@ button:hover {
 }
 
 .tabs-container .tab-label {
-  font-size: 1.4rem;
-  padding: 12px 24px;
+  font-size: 0.9rem;
+  padding: 9px 12px;
   background-color: #fff;
   border: 2px solid #ff6600;
   color: #ff6600;
   cursor: pointer;
   border-radius: 15px;
-  margin: 15px;
+  margin: 11px;
   display: inline-block;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
