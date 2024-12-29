@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA TORRE PIZZA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<link rel="icon" href="imagenes/iconologo.png" type="imagenes/iconologo.png"> 
+<!-- CABECERA -->
+<body>
+  <header>
+    <div class="menu container">
+      <img class="logo-1" src="imagenes/logo1.png" alt="">
+      <input type="checkbox" id="menu"/>
+      <nav class="navbar">
+        <div class="menu-1">
+          <ul>
+            <li><a href="#mas-vendidos">Los más vendidos!</a></li>
+            <li><a href="#clasicos">Clásicos</a></li>
+            <li><a href="#complementos">Complementos</a></li>
+          </ul>
+        </div>
+        <div class="menu-2">
+          <div class="socials">
+            <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza">
+                <img src="imagenes/iconowhats.png" alt="" class="social"></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+<!-- SLIDES CON IMG DE PROMO-->
+<div class="header-content container">
+  <div class="swiper mySwiper-1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slaider">
+          <div class="slider-img">
+            <div class="slider-text">
+            <img src="imagenes/promonavidad1.jpg" >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slaider">
+          <div class="slider-img">
+            <div class="slider-text">
+            <img src="imagenes/promo3.jpg" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+</header>
+        
+<!-- PROMOCIONES DESLILZANTES -->
+<body>
+  <section class="promotions" id="mas-vendidos">
+    <h2>Promociones</h2>
+    <p>Disfruta nuestras mejores pizzas al mejor precio.</p>
+    <div class="promotions-grid">
+      <div class="promo-card">
+        <img src="imagenes/hawaiana.png" alt="Promo 1">
+        <div class="promo-info">
+          <span class="discount">15% OFF</span>
+          <h3>HAWAIANA FAMILIAR</h3>
+          <p>Mozarella, Salsa de tomate,Jamón inglés y piña. </p>
+          <p class="price">S/ 34.00 <span>S/ 40.00</span></p>
+        </div>
+      </div>
+      <div class="promo-card">
+        <img src="imagenes/peperoni.png" alt="Promo 2">
+        <div class="promo-info">
+          <span class="discount">25% OFF</span>
+          <h3>ITALIANA FAMILIAR</h3>
+          <p>Mozarella, Salsa de tomate y Pepperoni.</p>
+          <p class="price">S/ 30.00 <span>S/ 40.00</span></p>
+        </div>
+      </div>
+      <div class="promo-card">
+        <img src="imagenes/americana.png" alt="Promo 3">
+        <div class="promo-info">
+          <span class="discount">25% OFF</span>
+          <h3>AMERICANA FAMILIAR</h3>
+          <p>Mozarella, Salsa de tomate y Jamón inglés.</p>
+          <p class="price">S/ 30.00 <span>S/ 40.00</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="products-section">
+    <div class="tabs-container" id="clasicos">
+  
+      <!-- Pestaña 1: clasicos -->
+      <input type="radio" name="product-tabs" id="tab-hamburguesa" class="tab-input" checked>
+      <label for="tab-hamburguesa" class="tab-label">CLÁSICOS</label>
+      <div class="tab-content">
+        <div class="swiper products-swiper" id="swiper-hamburguesa">
+          <div class="swiper-wrapper">
+  
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/fugazza.png" alt="pizza fugazza">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">FUGAZZA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate,Cebolla blanca, Aceitunas y Pimientos asados. </p>
+                  <span id="product-price" class="product-price">S/28</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="16">Personal</option>
+                      <option value="mediana" data-price="28">Mediana</option>
+                      <option value="familiar" data-price="38">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/americana.png" alt="pizza americana">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">AMERICANA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate y Jamón inglés</p>
+                  <span class="product-price">S/30</span>
+                </div>
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="17">Personal</option>
+                      <option value="mediana" data-price="30">Mediana</option>
+                      <option value="familiar" data-price="40">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/peperoni.png" alt="pizza italiana">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">ITALIANA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate y Pepperoni.</p>
+                  <span class="product-price">S/30</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="17">Personal</option>
+                      <option value="mediana" data-price="30">Mediana</option>
+                      <option value="familiar" data-price="40">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/napolitana.png" alt="pizza napolitana">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">NAPOLITANA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate,Jamón inglés, Rodajas de tomate y Albahaca.</p>
+                  <span class="product-price">S/32</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="18">Personal</option>
+                      <option value="mediana" data-price="32">Mediana</option>
+                      <option value="familiar" data-price="42">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/francesa.png" alt="pizza francesa">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">FRANCESA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, Jamón inglés, Champiñones, Aceitunas y Pimientos.</p>
+                  <span class="product-price">S/32</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="18">Personal</option>
+                      <option value="mediana" data-price="32">Mediana</option>
+                      <option value="familiar" data-price="42">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/hawaiana.png" alt="pizza hawaiana">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">HAWAIANA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, Jamón inglés y piña.</p>
+                  <span class="product-price">S/34</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="18">Personal</option>
+                      <option value="mediana" data-price="34">Mediana</option>
+                      <option value="familiar" data-price="44">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/tropical.png" alt="pizza tropical">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">TROPICAL</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, Jamón inglés, piña y durazno.</p>
+                  <span class="product-price">S/35</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="19">Personal</option>
+                      <option value="mediana" data-price="35">Mediana</option>
+                      <option value="familiar" data-price="45">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/primavera.png" alt="pizza primavera">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">PRIMAVERA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, Jamón inglés, pollo y durazno.</p>
+                  <span class="product-price">S/35</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="19">Personal</option>
+                      <option value="mediana" data-price="35">Mediana</option>
+                      <option value="familiar" data-price="45">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/peruana.png" alt="pizza peruana">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">PERUANA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, pollo aderezado, finas hierbas y pimientos.</p>
+                  <span class="product-price">S/35</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="19">Personal</option>
+                      <option value="mediana" data-price="35">Mediana</option>
+                      <option value="familiar" data-price="45">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/española.png" alt="pizza española">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">ESPAÑOLA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, tocino ahumado, chorizo español, cebolla blanca y pimientos.</p>
+                  <span class="product-price">S/36</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="19">Personal</option>
+                      <option value="mediana" data-price="36">Mediana</option>
+                      <option value="familiar" data-price="45">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/californiana.png" alt="pizza californiana">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">CALIFORNIANA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, salame, tocino ahumado, chorizo español y pimientos.</p>
+                  <span class="product-price">S/35</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="19">Personal</option>
+                      <option value="mediana" data-price="35">Mediana</option>
+                      <option value="familiar" data-price="45">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/alemana.png" alt="pizza alemana">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">ALEMANA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, hot dogs, salchicha alemana frankfurt y olivos verdes.</p>
+                  <span class="product-price">S/35</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="19">Personal</option>
+                      <option value="mediana" data-price="35">Mediana</option>
+                      <option value="familiar" data-price="45">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/vegetariana.png" alt="pizza vegetariana">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">VEGETARIANA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, Espinaca, Brocoli, Champiñones y Pimientos.</p>
+                  <span class="product-price">S/35</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="19">Personal</option>
+                      <option value="mediana" data-price="35">Mediana</option>
+                      <option value="familiar" data-price="45">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/cuatroquesos.png" alt="pizza cuatroquesos">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">CUATRO QUESOS</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, parmesano y queso con orégano.</p>
+                  <span class="product-price">S/35</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="19">Personal</option>
+                      <option value="mediana" data-price="35">Mediana</option>
+                      <option value="familiar" data-price="45">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+              </div>
+            </div>
+            <!-- Más productos... -->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+  
+      <!-- Pestaña 2: Burrito -->
+      <input type="radio" name="product-tabs" id="tab-burrito" class="tab-input">
+      <label for="tab-burrito" class="tab-label">DELICIAS DESCONOCIDAS</label>
+      <div class="tab-content">
+        <div class="swiper products-swiper" id="swiper-burrito">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/continental.png" alt="pizza continental">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">CONTINENTAL</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, Jamón inglés, tocino ahumado, Champiñones, cebolla blanca, aceitunas y pimientos asados.</p>
+                  <span class="product-price">S/35</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="19">Personal</option>
+                      <option value="mediana" data-price="35">Mediana</option>
+                      <option value="familiar" data-price="46">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/cabanossi.png" alt="pizza cabanossi">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">CABANOSSI</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, cabanossi y pimientos asados.</p>
+                  <span class="product-price">S/36</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="20">Personal</option>
+                      <option value="mediana" data-price="36">Mediana</option>
+                      <option value="familiar" data-price="46">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/portuguesa.png" alt="pizza portuguesa">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">PORTUGUESA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, picado de jamón inglés, tocino ahumado, chorizo español, salame, aceitunas y pimientos.</p>
+                  <span class="product-price">S/37</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="20">Personal</option>
+                      <option value="mediana" data-price="37">Mediana</option>
+                      <option value="familiar" data-price="47">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/argentina.png" alt="pizza argentina">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">ARGENTINA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, carne de res y chimichurri(receta de la casa).</p>
+                  <span class="product-price">S/37</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="20">Personal</option>
+                      <option value="mediana" data-price="37">Mediana</option>
+                      <option value="familiar" data-price="47">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/bolognesa.png" alt="pizza bolognesa">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">BOLOGNESA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, salsa bolognesa y albahaca.</p>
+                  <span class="product-price">S/37</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="20">Personal</option>
+                      <option value="mediana" data-price="37">Mediana</option>
+                      <option value="familiar" data-price="47">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/mediterranea.png" alt="pizza mediterranea">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">MEDITERRANEA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, jamón inglés, tocino, carne de res, Champiñones, pimientos, cebolla blanca y olivo.</p>
+                  <span class="product-price">S/38</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="22">Personal</option>
+                      <option value="mediana" data-price="38">Mediana</option>
+                      <option value="familiar" data-price="48">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/carnivora.png" alt="pizza carnivora">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">CARNÍVORA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, jamón inglés, carne de res, pollo y tocino ahumado.</p>
+                  <span class="product-price">S/38</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="22">Personal</option>
+                      <option value="mediana" data-price="38">Mediana</option>
+                      <option value="familiar" data-price="48">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/delacasa.png" alt="pizza delacasa">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">DE LA CASA DE LA TORRE PIZZA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, salame, tocino ahumado, Champiñones y carne de res.</p>
+                  <span class="product-price">S/38</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="22">Personal</option>
+                      <option value="mediana" data-price="38">Mediana</option>
+                      <option value="familiar" data-price="48">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/suprema.png" alt="pizza suprema">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">SUPREMA</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate, carne de res, tocino ahumado, cabanossi, cebolla blanca, aceitunas y pimientos asados.</p>
+                  <span class="product-price">S/37</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="23">Personal</option>
+                      <option value="mediana" data-price="39">Mediana</option>
+                      <option value="familiar" data-price="49">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/lomo.png" alt="pizza lomo saltado">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">LOMO SALTADO</h4>
+                  <p class="product-description">Mozarella, Salsa de tomate y lomo saltado con finas hierbas.</p>
+                  <span class="product-price">S/39</span>
+                </div>
+                <!-- Opciones adicionales (Tamaño, Cantidad, y Botón Agregar) -->
+                <div class="product-options">
+                  <div class="product-size">
+                    <label for="size-select">Tamaño:</label>
+                    <select id="size-select" class="size-dropdown">
+                      <option value="">Elige una opción</option>
+                      <option value="personal" data-price="23">Personal</option>
+                      <option value="mediana" data-price="39">Mediana</option>
+                      <option value="familiar" data-price="49">Familiar</option>
+                    </select>
+                  </div>
+                  <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="add-button">ORDENAR</a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Productos de delicias desconocidas-->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+  
+      <!-- Pestaña 3: Variedad -->
+      <input type="radio" name="product-tabs" id="tab-variedad" class="tab-input">
+      <label for="tab-variedad" class="tab-label">PAN AL AJO</label>
+      <div class="tab-content">
+        <div class="swiper products-swiper" id="swiper-variedad">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/panajo.png" alt="Hamburguesa vegetariana">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">CLÁSICO</h4>
+                  <p class="product-description"></p>
+                  <span class="product-price">S/6</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/panespecial.png" alt="Hamburguesa vegetariana">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">ESPECIAL</h4>
+                  <p class="product-description">Queso con jamón.</p>
+                  <span class="product-price">S/8</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-image">
+                  
+                  <img src="imagenes/pandelacasa.png" alt="Hamburguesa vegetariana">
+                </div>
+                <div class="product-details">
+                  <h4 class="product-name">DE LA CASA DE LA TORRE PIZZA</h4>
+                  <p class="product-description">Queso, tocino, Champiñones y pimentón.</p>
+                  <span class="product-price">S/9</span>
+                </div>
+              </div>
+            </div>
+            <!-- Productos de Variedad -->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+  
+    </div>
+  </main>
+  
+
+
+  <!-- Sección de Información -->
+  <section class="info-container" id="complementos">
+    <div class="info-content">
+      <div class="info-img">
+        <img src="imagenes/LASAGNABOLO.png" alt="Imagen de lasagna">
+      </div>
+      <div class="info-txt">
+        <h2>LAZAGNA BOLOGNESA</h2>
+        <p>Un plato tradicional italiano que consiste en capas de pasta intercaladas con salsa boloñesa (una mezcla de carne molida, tomate, especias, salsa bechamel y queso). Se hornea hasta que las capas se fusionan y el queso se derrite, creando una textura cremosa y un sabor rico y reconfortante.</p>
+        <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="btn-2">ORDENAR</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Ubicación -->
+  <section class="location-container">
+    <h2>Ubicación</h2>
+    <p>Encuentra nuestra sucursal más cercana:</p>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.933338729647!2d-78.5871389!3d-9.0698378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ab8190f299a991%3A0x6c760d552d1799d9!2sLa%20Torre%20Pizza%20Chimbote!5e0!3m2!1ses-419!2spe!4v1733941179782!5m2!1ses-419!2spe"
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+<!-- PIE DE PAGINA FINAL -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Información de contacto</h3>
+        <ul>
+          <li><strong>Dirección: </strong> Nuevo Chimbote</li>
+          <li><strong>Móvil: </strong> +51 940731743</li>
+          <li><strong>Horario: </strong> 12:00pm a 10:00pm</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Redes sociales</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100094458292792" class="icon facebook" aria-label="Facebook"></a>
+          <a href="https://www.tiktok.com/@latorrepizzanvochimbote" class="icon tiktok" aria-label="TikTok"></a>
+          <a href="https://wa.me/51940731743?text=Hola!%20quiero%20una%20pizza" class="icon whatsapp" aria-label="WhatsApp"></a>
+        </div>
+      </div>
+      <div class="footer-section logo-container">
+        <img src="imagenes/logo1.png" alt="Torrepizza" class="logo-footer">
+      </div>
+    </div>
+    <p class="footer-bottom">LA TORRE PIZZA © 2025. Todos los Derechos Reservados.</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
